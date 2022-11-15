@@ -1,0 +1,1759 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('woff');
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: local('Inter'), url('../fonts/Inter-ExtraBold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Bold.ttf);
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-VariableFont_slnt,wght.ttf);
+  }
+  @font-face {
+    font-family: "Alethia Next";
+    src: url(fonts/AlethiaNext-Light.ttf);
+  }
+  @font-face {
+    font-family: Aldrich;
+    src: url(fonts/Aldrich-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Spartan";
+    src: url(" fonts/Spartan-SemiBold.woff2") format("woff2"), url(" fonts/Spartan-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Orbitron;
+    src: url(fonts/Orbitron-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Rajdhani-Bold;
+    src: url(fonts/Rajdhani-Bold.ttf);
+  }
+  @font-face {
+    font-family: Rajdhani-Light;
+    src: url(fonts/Rajdhani-Light.ttf);
+  }
+  @font-face {
+    font-family: Rajdhani-Medium;
+    src: url(fonts/Rajdhani-Medium.ttf);
+  }
+  @font-face {
+    font-family: Rajdhani-Regular;
+    src: url(fonts/Rajdhani-Regular.ttf);
+  }
+  @font-face {
+    font-family: Rajdhani-SemiBold;
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+  }
+  @font-face {
+    font-family: Museo;
+    src: url(fonts/MuseoModerno-VariableFont_wght.ttf);
+  }
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: local('Inter'), url('../fonts/Inter-Medium.ttf') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@font-face {
+    font-family: 'alethianext-light';
+    src: url('alethianext-light-webfont.woff2') format('woff2'),
+         url('alethianext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../fonts/Spartan-SemiBold.woff2') format('woff2'),
+      url('../fonts/Spartan-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'alethianext-light';
+    src: url('../fonts/alethianext-light-webfont.woff2') format('woff2'),
+         url('../fonts/alethianext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    background-image: url('../images/body-back.png');
+}
+
+.popup{
+    display: none;
+}
+.container{
+    background-image: url('../images/body.jpg');
+    max-width: 1600px;
+    margin: 0px auto;
+}
+
+
+.header__conteiner{
+    max-width: 1393,98px;
+    margin: 0 102.58px 0 103.44px;
+}
+
+
+.logo{
+    display: flex;
+    margin-top: 52.06px;
+}
+
+.logo_img{
+    max-width: 16.58px;
+    height: 26.81px;
+    margin: -2px -0.5px 0 2px;
+}
+
+.logo__text{
+    display: flex;
+    max-width: 117.18px;
+    margin: -0.4 0 0 -1.5px;
+}
+
+.logo__label{
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: -1px;
+}
+
+.logo_label__caps{
+    text-transform: uppercase;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    line-height: 25px;
+    color:white;
+}
+
+.container__nav{
+    max-width: 1393.98px;
+    margin: 0 auto;
+}
+
+.navbar__wrap{
+    display: flex;
+    height: 100%;  
+    padding-left: 9px;
+}
+
+
+.navbar {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 122px;
+}
+
+.menu{
+    display: flex;
+    margin-top: 52.06px;
+    margin-left: 227px;
+}
+
+.navbar__wrap .menu > li {
+    display: flex;
+    align-items: stretch;
+}
+  
+.navbar__wrap .menu > li > a {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    line-height: 25px;
+    transition: transform 0.2s ease-in;
+    align-items: stretch;
+}
+
+.nav__link{
+    padding: 0 67.33px 0 67.33px
+}
+
+.iconss{
+    display: flex;
+    margin-top: 2px;
+    margin-left: 487.5px;
+}
+
+.nav__icon:nth-last-child(1){
+    margin-left: 42.5px;
+}
+
+.nav__icon__bascet{
+    margin-top: -1px;
+    margin-right: -1px;
+}
+
+.header__content{
+    position: relative;
+    display: flex;
+}
+
+.header__text__content
+{
+    margin-left: 0.4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header__text__title{
+    max-width: 847.89px;
+    font-family: 'Spartan';
+    font-weight: 600;
+    font-size: 66.3276px;
+    line-height: 137.2%;
+    color: #FFFFFF;
+    margin-top: -2px;
+}
+
+.header__text__title span{
+    margin-left: 0.2px;
+    margin-top: 0.5px;
+    font-family: 'Spartan';
+    font-weight: 600;
+    font-size: 66.3276px;
+    background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header__text__label{
+    margin-top: 21px;
+    max-width: 657.75px;
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 26.531px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.header__buttons{
+    position: relative;
+    display: flex;
+    margin: 43px 0 3px -2px;
+    align-items: baseline;
+}
+
+/* .header__button{
+    
+    position: relative;
+    text-decoration: none;
+    width: 249.83px;
+    height: 68.62px;
+    border: #43A5E3 solid 3px;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(106.124px);
+    border-radius: 2.21092px;
+    clip-path: polygon(20% 0, 100% 0, 100% 30%, 100% 75%, 87% 100%, 30% 100%, 0 100%, 0 30%);
+    transition: transform 0.2s ease-in;
+    
+} */
+
+
+
+.discover__explore-outside {
+    position: relative;
+    width: 254px;
+    height: 68px;
+    border-radius: 25px 5px 25px 5px;
+    background: linear-gradient(92.23deg, #ffa6fb 21.43%, #dd9ef4 50%, #407ad5 117.04%);
+    -webkit-clip-path: polygon(0% 28%, 17% 0%, 100% 0%, 100% 73%, 85% 100%, 0% 100%);
+            clip-path: polygon(0% 28%, 17% 0%, 100% 0%, 100% 73%, 85% 100%, 0% 100%);
+    -webkit-box-shadow: 1px 2.3px 57.2px 0px rgba(255, 86, 246, 0.5098039216);
+            box-shadow: 1px 2.3px 57.2px 0px rgba(255, 86, 246, 0.5098039216);
+  }
+  .discover__explore-text {
+    position: absolute;
+    left: 67.5px;
+    top: 21.3px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    color: #FFFFFF;
+  }
+  .discover__explore-inside {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 250px;
+    height: 64px;
+    border-radius: 25px 5px 25px 5px;
+    background: linear-gradient(92.23deg, #406AFF -17%, #3BACE2 0%, #B936EE 50%, #FF56F6 80%);
+    -webkit-clip-path: polygon(0% 28.5%, 17% 0%, 100% 0%, 100% 72.5%, 85% 100%, 0% 100%);
+            clip-path: polygon(0% 28.5%, 17% 0%, 100% 0%, 100% 72.5%, 85% 100%, 0% 100%);
+    display: -webkit-box;
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+    padding-right: 31px;
+    font-size: 19px;
+  }
+  .discover__arrow {
+    position: absolute;
+    top: 25px;
+    left: 166px;
+    width: 51.96px;
+    height: 15.48px;
+  }
+
+
+/* .header__button:hover{
+    transform: translateY(-1px);
+    border: #43A5E3 solid 4px;
+} */
+
+.header__link{
+    position: absolute;
+    left: 289.59px;
+    top: 22.3px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.2s ease-in;
+}
+
+
+.header__link:hover{
+    transform: translateY(-1px);
+}
+
+.header__statistic{
+    display: flex;
+    margin-top: 62px;
+}
+
+.header__statistic__column{
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.statistic__number{
+    margin-bottom: -5px;
+    font-family: 'Aldrich';
+    font-weight: 400;
+    font-size: 39.7965px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.221092px;
+    color: #FFFFFF;
+}
+
+.statistic__kharacteristic{
+    margin-top: 2px;
+    font-family: 'alethianext-light';
+    font-weight: 400;
+    font-size: 15.5px;
+    line-height: 22px;
+    display: flex;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.vertical-line__first{
+    margin: 8px 39px 0 14.84px;
+    height: 63.01px;
+}
+
+.vertical-line__second{
+    margin: 8px 44.8px 0 21px;
+    height: 63.01px;
+}
+
+.header-nft{
+    clip-path: polygon(100% 0, 100% 50%, 100% 0%, 100% 75%, 100% 100%, 0% 100%, 0 13%, 24% 0);
+    border: 4px solid #0000001f;
+    max-width: 401.28px;
+    height: 477.33px;
+    margin: 13px 0 0 53px;
+    border-radius: 15px;
+}
+
+.header__image{
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    left: 834.62px;
+    top: 517.35px;
+}
+
+.header__card{
+    position: absolute;
+    width: 336.06px;
+    height: 181.3px;
+    left: 210.36px;
+    top: 372.31px;
+    background-image: url('../images/Vector 684.png');
+}
+
+.header__cadr__columns{
+    display: flex;
+}
+.avatar__row{
+    display: flex;
+    justify-content: baseline;
+}
+
+.avatar__row__img{
+}
+
+.price__row{
+    display: flex;
+    margin-top: 12px;
+}
+
+.header__card__timer{
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number__row{
+    display: flex;
+}
+
+.avatar__row__name{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.ok{
+    width: 12.16px;
+    height: 13.27px;
+    margin-left: 3.7px;
+}
+
+
+.header__card__column{
+    margin-left: 22.2px;
+}
+
+.header__card__column_2{
+    margin: 17px 0 0 52.5px;
+}
+
+.header__card__title{
+    margin: 37.2px 0 10px 1px;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 17.6873px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.name{
+    margin-left: -1px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 15.4764px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.header__card__label{
+    margin-top: 21px;
+    margin-left: 1px;
+    margin-bottom: 12px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 11.0546px;
+    align-items: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.price__row__img{
+    height: 19.44px;
+    margin-top: -3px;
+    /* margin-left: 1px; */
+}
+
+.price-eth{
+    margin: 2.18px 0 0 3.5px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 9.71776px;
+    color: #FFFFFF;
+}
+
+.convert-to-dollars{
+    margin: 1.3px 0 0 6.5px;
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 11.0546px;
+    align-items: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.header__card__label{
+    margin-right: 63px;
+    margin-bottom: 10px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.0546px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.timer__numbers{
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 17.6873px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.timer__numbers:nth-last-child(2){
+    margin-left: 27.1px;
+    margin-right: 25.43px;
+}
+
+.timer__label{
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    font-size: 11.0546px;
+    align-items: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.timer__label:nth-last-child(2){
+    margin-left: 18.69px;
+    margin-right: 23.23px;
+}
+
+.row__label{
+    margin-top: 1px;
+    margin-left: -3px;
+}
+
+.header__button__card{
+    border: #43A5E3 solid 3px;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(106.124px);
+    border-radius: 2.21092px;
+    width: 122.39px;
+    height: 40.59px;
+    margin: 31px 0 0 -7.5px;
+    transition: transform 0.2s ease-in;
+}
+
+
+.header__button__card:hover{
+    transform: translateY(-1px);
+}
+
+.header__button__card__text{
+    display: flex;
+    text-align: center;
+    margin-left: 8px;
+    padding-top: 10px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 17.6873px;
+    color: #FFFFFF;
+}
+
+.header__button__card__text img{
+    width: 24.32px;
+    height: 9.22px;
+    margin: 2px 0 0 12px;
+}
+
+.partners__conteiner{
+    max-width: 1382.56px;
+    margin: 0 auto;
+}
+
+.partners__column{
+    display: flex;
+    margin-top: 125px;
+}
+
+.partners-mobile{
+    display: none;
+}
+
+.mobile-nft{
+    display: none;
+}
+
+.binance{
+    margin-top: -3.5px;
+}
+
+.etherium{
+    margin-bottom: -4px;
+    margin-left: -1px;
+}
+
+.blockchain{
+    margin-bottom: -3px;
+}
+
+.bitmex{
+    margin-top: 19px;
+    margin-left: -1px;
+}
+
+.partners__row{
+    display: flex;
+}
+
+.partners__row:first-child{
+    margin-right: 133.76px;
+}
+
+.partners__row a:first-child{
+    margin-right: 133.76px;
+}
+
+.section__cards__labels{
+    position: relative;
+    display: flex;
+    margin: 215.52px 0 51px 90px;
+}
+
+.section__cards__label{
+    position: relative;
+}
+
+.nav__right{
+    margin-left: 28px;
+}
+
+
+.manu__label{
+    margin: 4px 944.85px 0 19.5px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 26.531px;
+    color: #FFFFFF;
+}
+
+.section__cards__labele{
+    margin-top: -3px;
+}
+
+.cards-first{
+    min-width: 0;
+}
+
+.all__label{
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Orbitron';
+    font-weight: 600;
+    font-size: 26.531px;
+    color: #FFFFFF;
+    margin-top: -4px;
+}
+
+.all__label img{
+    padding-top: 5.5px;
+    margin-left: 8px;
+}
+
+
+.cards{
+    max-width: 1384.04px;
+    display: flex;
+    margin-top: -3px;
+    margin-bottom: 208px;
+    margin-left: 110.44px;
+    min-width: 0;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    max-width: 437.76px;
+    min-width: 0;
+}
+
+
+.cards-container{
+    max-width: 1600px;
+    margin-right: 5px;
+    min-width: 0;
+    overflow: hidden;
+    margin-right: 5px;
+    min-width: 0;
+}
+
+.card:nth-last-child(2){
+    margin-left: 34px;
+    margin-right: 36.5px;
+}
+
+.card__image{
+    width: 437.76px;
+}
+
+.card__information{
+    margin-top: -1px;
+    background-image: url('../images/bacgraund-card.png');
+    max-width: 437.76px;
+    height: 236.16px;
+}
+
+.card__information__columns{
+    display: flex;
+}
+
+.card__information__column{
+    margin-left: 30px;
+    margin-top: 48px;
+}
+
+.avatar__row__names{
+    display: flex;
+}
+
+.oks{
+    width: 15.84px;
+    height: 17.28px;
+    margin-left: 5px;
+    margin-top: 9px;
+}
+.cards-mobile-button{
+    display: none;
+}
+
+.card__avatars{
+    margin-top: -1px;
+}
+
+.card__information__title{
+    margin-bottom: 15px;
+    margin-left: 1.5px;
+    margin-top: 1px;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 23.0401px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card__information__avatar__name{
+    margin-top: 1px;
+    margin-left: 3px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 20.1601px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card__information__label{
+    margin-top: 29px;
+    margin-bottom: 18px;
+    margin-left: 1px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 14.4001px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.price__row__cards{
+    display: flex;
+}
+
+.price__row__cards img{
+    margin-left: -6px;
+    margin-top: -7px;
+}
+
+.card__price-eth{
+    margin-left: 1.5px;
+    margin-top: -1px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 12.6587px;
+    color: #FFFFFF;
+}
+
+.card__convert-to-dollars{
+    margin-top: -6px;
+    margin-left: 8px;
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 14.4001px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card__information__timer__number{
+    margin-left: 4px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 23.0401px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.timer__information__label{
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    font-size: 14.4001px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.column__second__label{
+    margin-left: 6px;
+    margin-bottom: 11px;
+}
+
+.senter__number{
+    margin-left: 33.56px;
+    margin-right: 33.12px;
+}
+
+.senter__number__card__first{
+    margin-right: 31px;
+    margin-left: 34.56px;
+}
+
+.second__card__row__label{
+    margin-left: 3px;
+    margin-top: 4px;
+}
+
+.second__column{
+    margin-top: 24.5px;
+    max-width: 155.52px;
+}
+
+.senter__number__card__two{
+    margin-right: 34px;
+    margin-left: 32px;
+}
+
+.second__column__card__two{
+    margin-left: 39px;
+}
+
+.second__column__card__three{
+    margin-left: 69px;
+}
+
+.row__numbers__third__card{
+    margin-left: 2px;
+}
+
+
+.senter__number__card__three{
+    margin-left: 32px;
+    margin-right: 29px;
+}
+
+.timer__information__label__second{
+    margin-left: 23.04px;
+    margin-right: 30.24px;
+}
+
+.button__card__text{
+    align-items: center;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 23.0401px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+}
+
+.button__card__text p{
+    margin-left: 11px;
+    margin-top: 9px;
+}
+
+.button__card__text img{
+    margin-top: 4px;
+    margin-left: 14px;
+    width: 31.68px;
+    height: 12.01px;
+}
+
+.button__card{
+    border: #43A5E3 solid 3px;
+    margin-top: 40px;
+    margin-left: -6px;
+    width: 158.52px;
+    height: 52.96px;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 5.76002px 139.681px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(138.241px);
+    transition: transform 0.2s ease-in;
+}
+
+.button__card:hover{
+    transform: translateY(-1px);
+}
+
+.section__collactions__conteiner{
+    position: relative;
+    max-width: 1346.45px;
+    margin: 0 auto;
+}
+
+.collactions__label{
+    margin-left: -16.5px;
+    padding-top: 4px;
+    margin-bottom: 48.4px;
+}
+
+.buttons__columns{
+    margin-left: -16px;
+    display: flex;
+}
+
+.buttons__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.collaction__button{
+    margin: 0 44px 43px 0;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 26.531px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0,0,0,0);
+    width: 368.12px;
+    height: 100px;
+    border: #B936EE solid   2px;
+    filter: drop-shadow(0px 5.76002px 139.681px rgba(255, 86, 246, 0.51));
+    backdrop-filter: blur(138.241px);
+    transition: transform 1s ease-in;
+}
+
+.collaction__button:hover{
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(106.124px);
+    border-radius: 2.21092px;
+}
+
+
+.collactions__image{
+    position: absolute;
+    width: 435.55px;
+    height: 814.72px;
+    left: 894.34px;
+    top: -50px;
+}
+
+.go{
+    margin-left: 12px;
+    width: 51.96px;
+    height: 15.48px;
+    margin-top: 2px;
+}
+
+.view-all{
+    position: absolute;
+    left: 603.71px;
+    top: 650.97px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+.collaction-explore__container{
+    max-width: 1384.04px;
+    margin: 0 auto;
+    margin-top: 247.61px;
+}
+
+.section__collaction-explore__text-row{
+    margin-top: 271px;
+    margin-bottom: -120px;
+    padding-left: 90px;
+    display: flex;
+}
+
+.collaction-explore__container{
+    margin-top: 166px;
+}
+
+.collaction-explore__go{
+    margin-top: 5px;
+}
+
+.collaction__explore__title{
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-right: 875.32px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 26.531px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+
+.section__collaction-explore__cards-row{
+    display: flex;
+    margin-left: 3.32px;
+}
+
+.card__bacgraund__img{
+    width: 437.76px;
+    height: 209px;
+}
+
+.collaction-explore__card{
+    border:darkgray solid 1px;
+    position: relative;
+    background-image: url('../images/bacgraund-srcond-card.png');
+    width: 437.76px;
+    height: 564.89px;
+}
+
+.collaction-explore__second__card{
+    margin: 0 36.37px;
+}
+
+.collaction-explore__card__avatar{
+    position: absolute;
+    top: 102.5px;
+    left: 136px;
+}
+
+.card__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72.17px;
+}
+
+.collaction-explore__card__title{
+    margin-top: -3px;
+    margin-left: 0.5px;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    font-size: 24.3201px;
+    color: #FFFFFF;
+}
+
+.subtitle__row{
+    position: relative;
+    margin-top: 9px;
+    margin-left: -21px;
+}
+
+.subtitle__row img{
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+
+.collaction-explore__card__sub-title{
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 20.1601px;
+    color: #FFB1EE;
+    margin-left: 18.4px;
+}
+
+.collaction-explore__card__statistic__row{
+    width: 360px;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__statistic__title{
+    margin-bottom: 6px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 31.6897px;
+    color: #FFFFFF;
+}
+
+.card__statistic__text{
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    font-size: 19.8061px;
+    color: #FFFFFF;
+}
+
+.collaction-explore__card__statistic__column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button-text{
+    width: 234.84px;
+    height: 50.85px;
+}
+
+.button{
+    border: #7fd1f1 solid  3px;
+    text-align: center;
+    margin-left: 6px;
+    margin-top: 45px;
+    width: 234.84px;
+    height: 50.85px;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.81747px 116.824px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(115.619px);
+    transition: transform 0.2s ease-in;
+}
+
+
+.button:hover{
+    transform: translateY(-1px);
+}
+
+.button-text p{
+    margin-top: 11px;
+    margin-left: -3px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 19.8983px;
+    color: #FFFFFF;
+}
+
+.top-sellers__conteiner{
+    max-width: 1381.11px;
+    margin: 0 auto;
+    margin-top: 160.41px;
+}
+
+.top-sellers__column-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top-sellers__title{
+    margin-top: 4px;
+    margin-left: 28px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 26.531px;
+    color: #FFFFFF;
+}
+
+.top-sellers__title span{
+    margin-left: 8px;
+    color: #FF56F6;
+}
+
+.scroll-down{
+    margin-bottom: 3px;
+    margin-left: 7px;
+}
+
+.top-sellers__text{
+    margin-left: 446px;
+    margin-top: 26.22px;
+    margin-bottom: 58.69px;
+    max-width: 506.3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 17.6873px;
+    color: #FFFFFF;
+}
+
+
+.top-sellers__button__row{
+    display: flex;
+}
+
+
+.top-sellers__button{
+    position: relative;
+    margin-bottom: 34.27px;
+    border: #7f838e solid 0.3px;
+    display: flex;
+    width: 437.04px;
+    height: 123.81px;
+    backdrop-filter: blur(37.9079px);
+    border-radius: 28.5719px;
+}
+
+.top-sellers__button__center{
+    margin-left: 34.99px;
+    margin-right: 34.99px;
+}
+
+.top-sellers__button__row{
+    display: flex;
+}
+
+.top-sellers__button__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.number__button__mobile{
+    position: absolute;
+    left: 28.63px;
+    top: 51.91px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 19.0479px;
+    color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.number__button{
+    position: absolute;
+    left: 28.63px;
+    top: 51.91px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 19.0479px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.number__button__last{
+    left: 20px;
+    top: 50.06px;
+}
+
+.button__name{
+    top: 33.37px;
+    left: 139.36px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 19.0479px;
+    color: #FFFFFF;
+}
+
+
+.button__avatar{
+    position: absolute;
+    left: 55.38px;
+    top: 25.51px;
+}
+
+.button__price{
+    left: 151px;
+    top: 71px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13.7568px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.eth-small{
+    width: 8.47px;
+    height: 13.76px;
+    position: absolute;
+    left: 138.29px;
+    top: 69.01px;
+}
+
+.green__button-percent__znach{
+    margin-top: 51.96px;
+    left: 316.16px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100.6px;
+    height: 35.37px;
+    background: rgba(0, 179, 71, 0.15);
+    border-radius: 17.5283px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14.7012px;
+    color: #00FF66;
+    border: #54df8c solid 0.05px;
+}   
+
+.green__button-percent__znach span{
+    position: absolute;
+    top: 8px;
+    left: 15.24px;
+}   
+
+.red__button-percent__znach{
+    margin-top: 51.96px;
+    left: 316.16px;
+    position: absolute;
+    text-align: center;
+    width: 100.6px;
+    height: 35.37px;
+    background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
+    border-radius: 17.5283px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14.7012px;
+    color: #FF0000;
+    border: #FF0000 solid 0.05px;
+}
+
+.red__button-percent__znach span{
+    position: absolute;
+    top: 8px;
+    left: 15.24px;
+} 
+
+.top-sellers__link{
+    width: 234.84px;
+    height: 53.85px;
+    margin-left: 582px;
+    margin-top: 25.91px;
+    margin-bottom: 160.48px;
+}
+
+.top-sellers__button__bottom p{
+    padding-top: 1px;
+    margin-left: -6px;
+}
+
+.about-nft{
+    position: relative;
+    height: 689.81px;
+}
+
+.about-nft__bacgraund{
+    height: 558.37px;
+    background: url('../images/bacgraund.jpg');
+}
+.subscribe__image-mobile{
+    display: none;
+}
+.acordion{
+    display: none;
+}
+.acordion-bacg{
+    display: none;
+}
+.mobile-line{
+    display: none;
+}
+.about-nft__text-block{
+    position: absolute;
+    margin-top: -342.67px;
+    margin-left: 884.37px;
+    width: 577.05px;
+    height: 473.14px;
+    background-image: url('../images/bacgraubd-about-nft.png');
+}
+
+.text-block__title{
+    margin-top: 65.95px;
+    margin-left: 73.21px;
+    font-family: 'Inter-Bold';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-weight: 800;
+    font-size: 44.5093px;
+    color: #FFFFFF;
+}
+
+.text-block__sub-title{
+    width: 510.45px;
+    padding-top: 25.8px;
+    padding-left: 73.21px;
+    padding-bottom: 48px;
+    font-family: 'Inter';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-weight: 400;
+    line-height: 36px;
+    color: #FFFFFF;
+    font-size: 20.0292px;
+}
+
+.text-block__row{
+    display: flex;
+    position: relative;
+}
+
+.text-block__row span{
+    margin-left: 73.21px;
+    font-family: 'Inter';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-weight: 400;
+    font-size: 17.8037px;
+    color: #FFFFFF;
+}
+
+.video{
+    position: absolute;
+    left: 163.87px;
+}
+
+.play{
+    position: absolute;
+    left: 214.87px;
+    top: -1px;
+}
+
+.subscribe__conteiner{
+    max-width: 1265.75px;
+    margin-top: 159.19px;
+    margin-left: 110.55px;
+}
+
+.subscribe__row{
+    display: flex;
+}
+
+.subscribe__column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75.28px;
+    margin-top: 30.5px;
+}
+
+.subscribe__title{
+    margin-bottom: 26.64px;
+    font-family: 'Orbitron';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.7965px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.subscribe__form{
+    display: flex;
+    margin-left: -1px;
+}
+
+.subscribe__subtitle{
+    margin-bottom: 50.74px;
+    font-family: 'Inter';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-weight: 400;
+    font-size: 19.8983px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.subscribe__input{
+    font-family: 'Inter';
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-weight: 400;
+    font-size: 15.4764px;
+    color: #474A57;
+    padding: 15.4764px 15.6873px;
+    width: 277.15px;
+    height: 55.06px;
+    background: #F4F5F7;
+    border-radius: 5.5273px 0px 0px 5.5273px;
+}
+
+.form__button{
+    font-feature-settings: 'salt' on, 'liga' off;
+    margin-left: 5.84px;
+    width: 148.71px;
+    height: 55.06px; 
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.81747px 116.824px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(115.619px);    
+    border-radius: 0px 5.5273px 5.5273px 0px;
+    border: #7fd1f1 solid 2;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: transform 0.2s ease-in;
+}
+
+.form__button:hover{
+    transform: translateY(-1px);
+}
+
+.form__button span{
+    margin-top: -1px;
+    margin-left: -5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 22px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.footer__conteiner{
+    margin-left: 84px;
+}
+
+.footer__line{
+    margin-left: -1px;
+    max-width: 1338.71px;
+    margin-top: 159.37px;
+    margin-bottom: 10px;
+    height: 1.11px;
+    background: #8e8989;
+    opacity: 0.2;
+}
+
+.footer__logo{
+    width: 16.58px;
+    height: 26.81px;
+}
+
+.footer__row{
+    display: flex;
+    padding-top: 87.52px;
+}
+
+.footer__title{
+    margin-top: -1px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 19.8983px;
+    line-height: 31px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.footer__title__first{
+    padding-top: 3px;
+    padding-left: 4px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 19.8983px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.ocean-nft__text{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #D9DBE1;
+}
+
+.footer__sub-title{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #D9DBE1;
+}
+
+.ocean-nft__text{
+    margin-top: 32.95px;
+    width: 281.89px;
+}
+
+.column__ocean-nft__logo{
+    display: flex;
+}
+
+.ocean-nft__icon__row{
+    margin-top: 23px;
+    display: flex;
+    margin-left: -1px;
+}
+
+.icon_img{
+    margin-left: 17px;
+    transition: transform 0.2s ease-in;
+}
+
+.icon_img:hover{
+    transform: translateY(-1px);
+}
+
+.footer__column__ocean-nft{
+    margin-right: 89.54px;
+}
+
+.footer_col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 33.16px;
+    width: 176.87px;
+}
+
+.footer__sub-title{
+    height: 27px;
+    margin-top: 16.27px;
+}
+
+.first__label{
+    margin-bottom: 0px;
+}
+
+.footer-subtitle__new{
+    position: relative;
+}
+
+.new{
+    position: absolute;
+    padding-left: 8.84px;
+    font-family: 'MuseoModerno';
+    font-weight: 400;
+    font-size: 22.1092px;
+    color: #2EC5CE;
+}
+
+.footer__sub-title__last{
+    margin-top: 13.27px;
+}
+
+.footer__line__second{
+    margin-top: 86.04px;
+}
+
+.footer__labels__row{
+    display: flex;
+    padding-top: 0.5px;
+    margin-left: -4px;
+    padding-bottom: 39.94px;
+}
+
+.footer__label{
+    width: 442.9px;
+}
+
+.label__row{
+    width: 354px;
+    display: flex;
+    margin-top: -2.5px;
+    margin-left: 545.38px;
+}
+
+.label__row img{
+    height: 18.53px;
+    margin-top: 20px;
+    padding-left: 10.84px;
+    padding-right: 10.84px;
+}
+
+.label__row img:nth-last-child(2){
+    padding-right: 11.84px;
+}
+.footer-mobile-end{
+    display: none;
+}
